@@ -32,7 +32,6 @@
     "webpack": "^2.3.3"
   },
   "dependencies": {
-    "mootools": "^1.5.2",
     "vue-c3": "^1.1.1"
   }
 }

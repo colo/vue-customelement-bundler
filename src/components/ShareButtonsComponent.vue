@@ -9,7 +9,7 @@ import VueC3 from 'vue-c3'
 //import VueResource from 'vue-resource'
 
 import Vue from 'vue'
-import 'mootools'
+//import 'mootools'
 
 //Vue.use(VueC3)
 
