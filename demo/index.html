@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	</head>
+	
+		<body>
+			<div id="myElement"></div>
+			<script>
+				
+				var chart = {
+					data: {
+						columns: [
+							['data', 90],
+						],
+						type: 'gauge',
+					},
+					color: {
+							pattern: ['#FF0000', '#F97600', '#F6C600', '#60B044'], // the three color levels for the percentage values.
+							threshold: {
+			//            unit: 'value', // percentage is default
+			//            max: 200, // 100 is default
+									values: [30, 60, 90, 100]
+							}
+					},
+					size: {
+							height: 120
+					} 
+      }
+      
+      document.getElementById('myElement').innerHTML = "<vue-c3-custom-element chart='"+JSON.stringify(chart)+"' />";
+      
+			</script>
+<!--
+			<vue-c3-custom-element colo='{ "data": {} }'/>
+-->
+<!--
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+-->
+<!--
+			<vue-c3-custom-element chart="chart"/>
+-->
+			<script src="../dist/my-vue-component.js"></script>
+		</body>
+</html>
